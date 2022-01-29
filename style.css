@@ -1,0 +1,66 @@
+body{
+	background-color: blanchedalmond ; 
+	font-family: monospace, sans-serif;
+}
+.clock {margin: auto;
+	position: relative;
+	height: 40vw;
+	width: 40vw ;
+	border: .5vw solid black;
+	background-color:  whitesmoke;
+	border-radius: 50%;
+	background-size: 100%;
+}
+#hour,#minute,#second{
+	position: absolute;
+	background: black;
+	border-radius: 10px;
+	transform-origin: bottom;
+}
+.clock::after{
+	content: '';
+	position: absolute;
+	background-color: black;
+	width: 1.8vw;
+	height: 1.8vw;border-radius: 50%;
+	top: 47.6%;
+	left: 48%;
+}
+#hour{top: 26%;
+    width: 1.6%;
+    height: 24%;
+    left: 50%;
+}
+#minute
+{
+    top: 16%;
+    width: 1.1%;
+    height: 34%;
+    left: 50%; 
+}
+#second{
+top: 10%;
+    width: 0.5%;
+    height: 40%;
+    left: 50%;
+   background: indianred;
+}
+.clock .number{--rotation: 0;
+	position: absolute;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	font-size: 2vw;
+	transform: rotate(var(--rotation));
+}
+.clock .number1{--rotation: 30deg;}
+.clock .number2{--rotation: 60deg;}
+.clock .number3{left: 47%;top: 47%;}
+.clock .number4{--rotation: 60deg; top: 47%;}
+.clock .number5{--rotation: 30deg;top:82% ;}
+.clock .number6{top: 94%;}
+.clock .number7{--rotation: -30deg;top: 82%;}
+.clock .number8{--rotation: -120deg;}
+.clock .number9{top: 47%;right: 47%;}
+.clock .number10{--rotation: -60deg;}
+.clock .number11{--rotation: -30deg;}
